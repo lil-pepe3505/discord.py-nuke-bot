@@ -1,8 +1,7 @@
 # discord.py-nuke-bot
 Nuke bot using discord.py
 
-Go to https://discord.com/developers/applications -> New Application
-Go to Bot tab under new application and create the Bot then reveal token and copy
+Go to https://discord.com/developers/applications -> New Application -> Go to Bot tab under new application and create the Bot then reveal token and copy
 
 Download the bot.py and change the userID to your discord user ID and change the token at the bottom to the token copied previously
 
