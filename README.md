@@ -5,7 +5,7 @@ Go to https://discord.com/developers/applications -> New Application -> Go to Bo
 
 Download the bot.py and change the userID to your discord user ID and change the token at the bottom to the token copied previously
 
-Invite to your server and use the commands as required, bot is set to only accept commands from your user:
+Invite to your server and use the commands as required, bot is set to only accept commands from user ID supplied:
 - *say #channel "message to send" = sends message as the bot
 - *roles = gets a list of roles with various privileges
 - *role <role> = gives yourself the role specified
