@@ -8,7 +8,7 @@ Download the bot.py and change the userID to your discord user ID and change the
 Invite to your server and use the commands as required, bot is set to only accept commands from user ID supplied:
 - *say #channel "message to send" = sends message as the bot
 - *roles = gets a list of roles with various privileges
-- *role <role> = gives yourself the role specified
+- *role "role name" = gives yourself the role specified
 - *rename "nickname" = renames all server members to nickname specified
 - *mute = mutes all server members
 - *kick = kicks all server members
