@@ -7,6 +7,7 @@ Download the bot.py and change the userID to your discord user ID and change the
 
 Invite to your server and use the commands as required, bot is set to only accept commands from user ID supplied:
 - *say #channel "message to send" = sends message as the bot
+- *servers = gets a list of servers and invite URLs that the bot is connected to
 - *roles = gets a list of roles with various privileges
 - *role "role name" = gives yourself the role specified
 - *rename "nickname" = renames all server members to nickname specified
@@ -15,4 +16,3 @@ Invite to your server and use the commands as required, bot is set to only accep
 - *ban = bans all server members
 - *purge = deletes the last 100 messages from current chat
 - *wipe = deletes all channels and then creates a new one called "nuked-by-{USERNAME}" so you can continue to issue commands if needed
-- *exec = lets you run custom python code from the bot
